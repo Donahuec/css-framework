@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,4BAAI;ACAZ,OAAO,CAAC,kEAAI;AACZ,OAAO,CAAC,sEAAI;AACZ,OAAO,CAAC,0EAAI;AECZ,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,OAAO,CAAC;EACN,aAAa,EAAE,cAAc;CAC9B;;AAED,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,KAAK;CACd;;AEbD,AAAA,YAAY,CAAC;EACX,UAAU,EAAE,MAAM;CACnB;;AAED,AAAA,WAAW,CAAC;EACV,UAAU,EAAE,KAAK;CAClB;;AAED,AAAA,UAAU,CAAC;EACT,UAAU,EAAE,IAAI;CACjB",
+    "sources": [
+        "framework.scss",
+        "utilities/_variables.scss",
+        "utilities/_mixins.scss",
+        "utilities/_universal.scss",
+        "components/_buttons.scss",
+        "styles/_typography.scss",
+        "styles/_colors.scss"
+    ],
+    "names": [],
+    "file": "framework.css"
+}
