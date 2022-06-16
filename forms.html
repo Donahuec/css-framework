@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Framework for Learning CSS - Forms</title>
+    <meta name="description" content="A Framework for Learning CSS" />
+    <meta name="author" content="Caitlin Donahue" />
+    <link rel="stylesheet" href="samplecss/sample.css" id="styles" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>A Framework for Learning CSS - Forms</h1>
+      <div>
+        <button onclick="changeTheme('css/framework.css')">No Theme</button>
+        <button onclick="changeTheme('samplecss/sample.css')">
+          Sample Theme
+        </button>
+      </div>
+      <div>
+        <a href="/">Home</a>
+        <a href="/forms.html">Forms</a>
+      </div>
+      <div>
+        <h2>Basic Form Control</h2>
+        <form>
+          <fieldset>
+            <legend>Text Form Controls</legend>
+            <p>
+              <label for="input">Example input</label>
+              <input type="text" id="input" placeholder="Example input" />
+            </p>
+            <p>
+              <label for="email">Example email</label>
+              <input type="email" id="email" placeholder="test@example.com" />
+            </p>
+            <p>
+              <label for="tel">Example telephone</label>
+              <input type="tel" id="tel" />
+            </p>
+            <p>
+              <label for="url">Example url</label>
+              <input type="url" id="url" />
+            </p>
+            <p>
+              <label for="number">Example number</label>
+              <input type="number" id="number" />
+            </p>
+            <p>
+              <label for="search">Example search</label>
+              <input type="search" id="search" />
+            </p>
+            <p>
+              <label for="textarea">Example textarea</label>
+              <textarea id="textarea" rows="3"></textarea>
+            </p>
+            <p>
+              <label for="password">Example password</label>
+              <input type="password" id="password" />
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Time Form Controls</legend>
+            <p>
+              <label for="date">Example date</label>
+              <input type="date" id="date" />
+            </p>
+            <p>
+              <label for="time">Example time</label>
+              <input type="time" id="time" />
+            </p>
+            <p>
+              <label for="datetime-local">Example datetime-local</label>
+              <input type="datetime-local" id="datetime-local" />
+            </p>
+            <p>
+              <label for="week">Example week</label>
+              <input type="week" id="week" />
+            </p>
+            <p>
+              <label for="month">Example month</label>
+              <input type="month" id="month" />
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choice Form Controls</legend>
+            <p>
+              <label for="range">Example range</label>
+              <input type="range" id="range" min="0" max="10" />
+            </p>
+            <p>
+              <label for="file">Example file input</label>
+              <input type="file" id="file" />
+            </p>
+            <p>
+              <label for="select">Example select</label>
+              <select id="select">
+                <option value="">Choose...</option>
+                <optgroup label="Option group 1">
+                  <option value="">Option 1</option>
+                  <option value="">Option 2</option>
+                  <option value="">Option 3</option>
+                </optgroup>
+                <optgroup label="Option group 2">
+                  <option value="">Option 4</option>
+                  <option value="">Option 5</option>
+                  <option value="">Option 6</option>
+                </optgroup>
+              </select>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" value="" />
+                Check this checkbox
+              </label>
+            </p>
+            <p>
+              <label>
+                <input
+                  type="radio"
+                  name="optionsRadios"
+                  id="optionsRadios1"
+                  value="option1"
+                  checked=""
+                />
+                Option one
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="optionsRadios"
+                  id="optionsRadios2"
+                  value="option2"
+                />
+                Option two
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="optionsRadios"
+                  id="optionsRadios3"
+                  value="option3"
+                  disabled=""
+                />
+                Option three is disabled
+              </label>
+            </p>
+            <p>
+              <label for="color">Example color</label
+              ><input
+                type="color"
+                id="color"
+                colorpick-eyedropper-active="true"
+              />
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Buttton Form Controls</legend>
+            <p>
+              <button type="submit">Button submit</button>
+              <input type="submit" value="Input submit button" />
+              <input type="reset" value="Input reset button" />
+              <input type="button" value="Input button" />
+            </p>
+            <p>
+              <button type="submit" disabled="">Button submit</button>
+              <input type="submit" value="Input submit button" disabled="" />
+              <input type="reset" value="Input reset button" disabled="" />
+              <input type="button" value="Input button" disabled="" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

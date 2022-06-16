@@ -7,9 +7,22 @@
     <title>A Framework for Learning CSS</title>
     <meta name="description" content="A Framework for Learning CSS" />
     <meta name="author" content="Caitlin Donahue" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/framework.css" id="styles" />
+    <script src="main.js"></script>
   </head>
   <body>
     <h1 class="text-center">A Framework for Learning CSS</h1>
+    <div>
+      <div>
+        <button onclick="changeTheme('css/framework.css')">No Theme</button>
+        <button onclick="changeTheme('samplecss/sample.css')">
+          Sample Theme
+        </button>
+      </div>
+      <div>
+        <a href="/">Home</a>
+        <a href="/forms.html">Forms</a>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,211 @@
+@import url("vendors/normalize.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.circle {
+  border-radius: 50% !important;
+}
+
+body {
+  height: 100vh;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 2px;
+  background-clip: padding-box;
+  margin: .5em .5em .5em .5em;
+  overflow: hidden;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Add some padding inside the card container */
+.card .card-content {
+  padding: 1em 1em 1em 1em;
+}
+
+.card .card-title {
+  padding: .3em 2em 0 2em;
+  border-bottom: 1px solid #dddddd;
+}
+
+.card .card-image .card-title {
+  position: absolute;
+  border: none;
+  padding: 0 1em 0 1em;
+  bottom: .25em;
+  left: 0;
+}
+
+.card .card-image .card-title.title-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  right: 0;
+  color: #ffffff;
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card .card-footer {
+  padding: .3em 2em .3em 2em;
+  border-top: 1px solid #dddddd;
+}
+
+.card .card-title::after,
+.card .card-content::after,
+.card .card-image::after,
+.card .card-footer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.display-block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 1em;
+  font-weight: light;
+}
+
+small {
+  font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 110%;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  margin: 0.5em 0 0.5em 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+select,
+textarea {
+  border: 1px solid #aaaaaa;
+  border-radius: 2px;
+  margin: 0 0 1em 0;
+  padding: 10px;
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="tel"]:focus-visible,
+input[type="url"]:focus-visible,
+input[type="number"]:focus-visible,
+input[type="search"]:focus-visible,
+input[type="password"]:focus-visible,
+input[type="date"]:focus-visible,
+input[type="time"]:focus-visible,
+input[type="datetime-local"]:focus-visible,
+input[type="week"]:focus-visible,
+input[type="month"]:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #0074d9;
+}
+/*# sourceMappingURL=sample.css.map */
