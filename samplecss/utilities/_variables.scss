@@ -24,7 +24,15 @@ $default-color: $gray;
 $success-color: $green;
 $warning-color: $orange;
 $error-color: $red;
+
+$default-color-light: lighten($gray, 20%);
+$default-color: $gray;
+$default-color-dark: darken($gray, 40%);
+
+$error-color-light: lighten($red, 30%);
+$error-color: $red;
+$error-color-dark: darken($red, 40%);
 // Fonts
 $font-roboto: "Roboto", sans-serif;
 //misc
-$default-radius: 2px;
+$default-radius: 3px;

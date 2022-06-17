@@ -30,6 +30,58 @@
         <h2>Basic Form Control</h2>
         <form>
           <fieldset>
+            <legend>Basic Text Form Styling</legend>
+            <p>
+              <label for="default">Default</label>
+              <input type="text" id="default" name="default" placeholder="Example input" />
+            </p>
+            <p>
+              <label for="disabled">Disabled</label>
+              <input
+                type="text"
+                id="disabled"
+                
+                name="disabled"
+                placeholder="Example input"
+                disabled
+              />
+            </p>
+            <p>
+              <label for="readonly">Read Only</label>
+              <input
+                type="text"
+                id="readonly"
+                name="readonly"
+                value="read only text"
+                readonly
+              />
+            </p>
+            <p>
+              <label for="required">Required</label>
+              <input
+                type="text"
+                id="required"
+                name="required"
+                placeholder="Example input"
+                required
+              />
+            </p>
+            <p>
+              <label for="errored">Invalid</label>
+              <input type="text" id="errored" placeholder="Example input" pattern="abc" name="errored" value="false"/>
+            </p>
+            <p>
+              <label for="help">Help Text</label>
+              <input type="text" id="help" name="help" placeholder="Example input" aria-describedby="help-text"/>
+              <div id="help-text">Helper text for the associated form</div>
+            </p>
+            
+            
+          </fieldset>
+        </form>
+        <br />
+          <form>
+          <fieldset>
             <legend>Text Form Controls</legend>
             <p>
               <label for="input">Example input</label>
@@ -64,7 +116,9 @@
               <input type="password" id="password" />
             </p>
           </fieldset>
+          </form>
           <br />
+          <form>
           <fieldset>
             <legend>Time Form Controls</legend>
             <p>
@@ -88,7 +142,9 @@
               <input type="month" id="month" />
             </p>
           </fieldset>
+          </form>
           <br />
+          <form>
           <fieldset>
             <legend>Choice Form Controls</legend>
             <p>
@@ -161,7 +217,9 @@
               />
             </p>
           </fieldset>
+        </form>
           <br />
+        <form>
           <fieldset>
             <legend>Buttton Form Controls</legend>
             <p>
@@ -171,9 +229,6 @@
               <input type="button" value="Input button" />
             </p>
             <p>
-              <button type="submit" disabled="">Button submit</button>
-              <input type="submit" value="Input submit button" disabled="" />
-              <input type="reset" value="Input reset button" disabled="" />
               <input type="button" value="Input button" disabled="" />
             </p>
           </fieldset>
