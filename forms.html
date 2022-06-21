@@ -15,19 +15,23 @@
   </head>
   <body>
     <div class="container">
-      <h1>A Framework for Learning CSS - Forms</h1>
-      <div>
-        <button onclick="changeTheme('css/framework.css')">No Theme</button>
-        <button onclick="changeTheme('samplecss/sample.css')">
+      <h1 class="text-center" >A Framework for Learning CSS</h1>
+      <h2 class="text-center" >Forms</h2>
+      <br>
+      <div class="nav-links">
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/forms.html">Forms</a>
+        <a href="{{ site.baseurl }}/typography.html">Typography</a>
+      </div>
+      <br>
+      <div class="theme-buttons">
+        <button class="primary" onclick="changeTheme('css/framework.css')">No Theme</button>
+        <button class="primary" onclick="changeTheme('samplecss/sample.css')">
           Sample Theme
         </button>
       </div>
       <div>
-        <a href="{{ site.baseurl }}/">Home</a>
-        <a href="{{ site.baseurl }}/forms.html">Forms</a>
-      </div>
-      <div>
-        <h2>Basic Form Control</h2>
+        <h3>Basic Form Control</h3>
         <form>
           <fieldset>
             <legend>Basic Text Form Styling</legend>

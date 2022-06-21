@@ -10,31 +10,86 @@
     <title>A Framework for Learning CSS</title>
     <meta name="description" content="A Framework for Learning CSS" />
     <meta name="author" content="Caitlin Donahue" />
-    <link rel="stylesheet" href="css/framework.css" id="styles" />
+    <link rel="stylesheet" href="samplecss/sample.css" id="styles" />
     <script src="main.js"></script>
   </head>
   <body>
-    <h1 class="text-center">A Framework for Learning CSS</h1>
-    <div>
+    <div class="container">
+      <h1 class="text-center">A Framework for Learning CSS</h1>
       <div>
-        <button onclick="changeTheme('css/framework.css')">No Theme</button>
-        <button onclick="changeTheme('samplecss/sample.css')">
-          Sample Theme
-        </button>
-      </div>
-      <div>
-        <a href="{{ site.baseurl }}/">Home</a>
-        <a href="{{ site.baseurl }}/forms.html">Forms</a>
-      </div>
-      <div>
-        <h2>Presentation and Resources</h2>
-        <p>
-          <a
-            href="https://docs.google.com/presentation/d/1-2PDP0ub1I4AF1lZQnfU-Q9NO8Z3JZB4EJwSNPbFpxs/edit?usp=sharing"
-            >Presentation Slides</a
-          >
-          <a href="https://github.com/Donahuec/css-framework">Git Repo</a>
-        </p>
+        <div class="nav-links">
+          <a href="{{ site.baseurl }}/">Home</a>
+          <a href="{{ site.baseurl }}/forms.html">Forms</a>
+          <a href="{{ site.baseurl }}/typography.html">Typography</a>
+        </div>
+        <br />
+        <div class="theme-buttons">
+          <button class="primary" onclick="changeTheme('css/framework.css')">
+            No Theme
+          </button>
+          <button class="primary" onclick="changeTheme('samplecss/sample.css')">
+            Sample Theme
+          </button>
+        </div>
+        <br />
+        <div class="main-content">
+          <h2 class="text-center">Presentation and Resources</h2>
+          <ul>
+            <li>
+              <a href="https://donahuec.github.io/css-framework/"
+                >https://donahuec.github.io/css-framework/</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/presentation/d/1-2PDP0ub1I4AF1lZQnfU-Q9NO8Z3JZB4EJwSNPbFpxs/edit?usp=sharing"
+                >Presentation Slides</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/Donahuec/css-framework">Git Repo</a>
+            </li>
+          </ul>
+          <br />
+          <h2 class="text-center">Setting up the Repo</h2>
+          <ul>
+            <li>
+              <a href="https://sass-lang.com/install">Install Sass</a>
+            </li>
+            <li>
+              Build Sass
+              <ul>
+                <li>
+                  In terminal at project root
+                  <ul>
+                    <li>One compile: sass .</li>
+                    <li>Watch for changes: sass --watch .</li>
+                  </ul>
+                </li>
+                <li>Or use as extension like Live Sass Compiler</li>
+              </ul>
+            </li>
+          </ul>
+          <h3 class="text-center">Using Jekyll</h3>
+          <ul>
+            <li>
+              <a href="https://jekyllrb.com/docs/installation/"
+                >Install Ruby, Jekyll, and Bundler</a
+              >
+            </li>
+            <li>Update _config.yml - not necessary for local running</li>
+            <li>
+              In a terminal run:
+              <ul>
+                <li>bundle install</li>
+                <li>bundle exec jekyll serve</li>
+                <li>Alternatively, use a vs code extension like Jekyll Run</li>
+              </ul>
+            </li>
+            <li>Preview site at http://localhost:4000</li>
+          </ul>
+          <h3 class="text-center">Without Jekyll</h3>
+        </div>
       </div>
     </div>
   </body>

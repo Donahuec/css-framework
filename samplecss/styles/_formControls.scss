@@ -24,7 +24,7 @@ $textSelectorMap: (
     border-radius: $default-radius;
     margin: 0 0 1em 0;
     padding: 10px;
-    color: $black;
+    color: $text-dark;
     &::placeholder {
       color: $default-color;
     }
@@ -52,7 +52,7 @@ $textSelectorMap: (
 @each $selectorName, $actualSelector in $textSelectorMap {
   #{$actualSelector}:read-only {
     background-color: $default-color-light;
-    color: $black;
+    color: $text-dark;
   }
 }
 
