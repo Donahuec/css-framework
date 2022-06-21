@@ -20,73 +20,53 @@ $textSelectorMap: (
 
 @each $selectorName, $actualSelector in $textSelectorMap {
   #{$actualSelector} {
-    border: 1px solid $default-color;
-    border-radius: $default-radius;
-    margin: .25em 0 .25em 0;
-    padding: 5px;
-    color: $text-dark;
+    // Define top level style:
+    // borders, colors, margins, etc
     &::placeholder {
-      color: $default-color;
     }
   }
 }
 
 @each $selectorName, $actualSelector in $textSelectorMap {
   #{$actualSelector}:focus-visible {
-    outline: 2px solid $primary-color;
   }
 }
 
 @each $selectorName, $actualSelector in $textSelectorMap {
   #{$actualSelector}:disabled,
   #{$actualSelector}:read-only {
-    background-color: $default-color-light;
-    color: $default-color-dark;
 
     &::placeholder {
-      color: $default-color-dark;
     }
   }
 }
 
 @each $selectorName, $actualSelector in $textSelectorMap {
   #{$actualSelector}:read-only {
-    background-color: $default-color-light;
-    color: $text-dark;
   }
 }
 
 @each $selectorName, $actualSelector in $textSelectorMap {
   #{$actualSelector}:invalid {
-    border: 1px solid $error-color;
-    background-color: $error-color-light;
 
     &::placeholder {
-      color: $error-color-dark;
     }
     &:focus-visible {
-      outline: 2px solid $error-color-dark;
     }
   }
 }
 
 .form-control {
-  margin: .5em 0 1em 0;
-  
+
   label {
-    display: inline-block;
   }
 
   input {
-    display: block;
   }
 
   .help-text,
   .error-text,
   .success-text {
-    display: block;
-    font-size: .75rem;
-
     
   }
 
@@ -94,23 +74,18 @@ $textSelectorMap: (
     &.help-text,
     &.error-text,
     &.success-text {
-      display: none;
+      // help text that is hidden when a sibling input is in a valid state
     }
   }
 
   .help-text {
-    color: $default-color-dark;
   }
 
   .error-text {
-    color: $error-color;
   }
 
   .success-text {
-    color: $success-color;
   }
-
-  
 }
 
 

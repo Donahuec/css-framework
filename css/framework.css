@@ -1,7 +1,8 @@
 @import url("vendors/normalize.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .circle {
@@ -21,8 +22,8 @@ body {
   margin: 0;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .pull-left {
@@ -36,5 +37,4 @@ body {
 .display-block {
   display: block;
 }
-
 /*# sourceMappingURL=framework.css.map */
