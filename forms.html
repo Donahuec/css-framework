@@ -15,17 +15,19 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center" >A Framework for Learning CSS</h1>
-      <h2 class="text-center" >Forms</h2>
+      <h1 class="text-center">A Framework for Learning CSS</h1>
+      <h2 class="text-center">Forms</h2>
       <br />
       <div class="nav-links">
         <a href="{{ site.baseurl }}/">Home</a>
         <a href="{{ site.baseurl }}/forms.html">Forms</a>
         <a href="{{ site.baseurl }}/typography.html">Typography</a>
       </div>
-      <br>
+      <br />
       <div class="theme-buttons">
-        <button class="primary" onclick="changeTheme('css/framework.css')">No Theme</button>
+        <button class="primary" onclick="changeTheme('css/framework.css')">
+          No Theme
+        </button>
         <button class="primary" onclick="changeTheme('samplecss/sample.css')">
           Sample Theme
         </button>
@@ -37,14 +39,18 @@
             <legend>Basic Text Form Styling</legend>
             <div class="form-control">
               <label for="default">Default</label>
-              <input type="text" id="default" name="default" placeholder="Example input" />
+              <input
+                type="text"
+                id="default"
+                name="default"
+                placeholder="Example input"
+              />
             </div>
             <div class="form-control">
               <label for="disabled">Disabled</label>
               <input
                 type="text"
                 id="disabled"
-                
                 name="disabled"
                 placeholder="Example input"
                 disabled
@@ -60,32 +66,45 @@
                 readonly
               />
             </div>
-              <div class="form-control">
-                <label for="required">Required</label>
-                <input
-                  type="text"
-                  id="required"
-                  name="required"
-                  placeholder="Example input"
-                  required
-                />
-                <div class="error-text hide-valid">Helper text for the associated form</div>
+            <div class="form-control">
+              <label for="required">Required</label>
+              <input
+                type="text"
+                id="required"
+                name="required"
+                placeholder="Example input"
+                required
+              />
+              <div class="error-text hide-valid">
+                Helper text for the associated form
               </div>
+            </div>
             <div class="form-control">
               <label for="errored">Invalid</label>
-              <input type="text" id="errored" placeholder="Example input" pattern="abc" name="errored" value="false"/>
+              <input
+                type="text"
+                id="errored"
+                placeholder="Example input"
+                pattern="abc"
+                name="errored"
+                value="false"
+              />
             </div>
-              <div class="form-control">
-                <label for="help">Help Text</label>
-                <input type="text" id="help" name="help" placeholder="Example input" aria-describedby="help-text"/>
-                <div class="help-text">Helper text for the associated form</div>
-              </div>
-            
-            
+            <div class="form-control">
+              <label for="help">Help Text</label>
+              <input
+                type="text"
+                id="help"
+                name="help"
+                placeholder="Example input"
+                aria-describedby="help-text"
+              />
+              <div class="help-text">Helper text for the associated form</div>
+            </div>
           </fieldset>
         </form>
         <br />
-          <form>
+        <form>
           <fieldset>
             <legend>Text Form Controls</legend>
             <p>
@@ -121,9 +140,9 @@
               <input type="password" id="password" />
             </p>
           </fieldset>
-          </form>
-          <br />
-          <form>
+        </form>
+        <br />
+        <form>
           <fieldset>
             <legend>Time Form Controls</legend>
             <p>
@@ -147,9 +166,9 @@
               <input type="month" id="month" />
             </p>
           </fieldset>
-          </form>
-          <br />
-          <form>
+        </form>
+        <br />
+        <form>
           <fieldset>
             <legend>Choice Form Controls</legend>
             <p>
@@ -223,7 +242,7 @@
             </p>
           </fieldset>
         </form>
-          <br />
+        <br />
         <form>
           <fieldset>
             <legend>Buttton Form Controls</legend>
