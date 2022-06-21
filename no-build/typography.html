@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Framework for Learning CSS - Typography</title>
+    <meta name="description" content="A Framework for Learning CSS" />
+    <meta name="author" content="Caitlin Donahue" />
+    <link rel="stylesheet" href="../samplecss/sample.css" id="styles" />
+    <script src="../main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">A Framework for Learning CSS</h1>
+      <h2 class="text-center">Typography</h2>
+      <br />
+      <div>
+        <div class="nav-links">
+          <a href="/no-build/">Home</a>
+          <a href="/no-build/forms.html">Forms</a>
+          <a href="/no-build/typography.html">Typography</a>
+        </div>
+        <br />
+        <div class="theme-buttons">
+          <button class="primary" onclick="changeTheme('../css/framework.css')">
+            No Theme
+          </button>
+          <button class="primary" onclick="changeTheme('../samplecss/sample.css')">
+            Sample Theme
+          </button>
+        </div>
+
+      <section id="typography">
+        <div class="card display-block">
+          <div class="card-title">
+            <h3>Headings</h3>
+          </div>
+          <div class="card-content">
+            <h1>h1. Heading</h1>
+            <h2>h2. Heading</h2>
+            <h3>h3. Heading</h3>
+            <h4>h4. Heading</h4>
+            <h5>h5. Heading</h5>
+            <h6>h6. Heading</h6>
+          </div>
+        </div>
+        <div class="card display-block">
+          <div class="card-title">
+            <h3>Text Styles</h3>
+          </div>
+          <div class="card-content">
+            <p>
+              You can use the mark tag to
+              <mark>highlight</mark> text.
+            </p>
+            <p>
+              <del
+                >This line of text is meant to be treated as deleted text.</del
+              >
+            </p>
+            <p>
+              <s
+                >This line of text is meant to be treated as no longer
+                accurate.</s
+              >
+            </p>
+            <p>
+              <ins
+                >This line of text is meant to be treated as an addition to the
+                document.</ins
+              >
+            </p>
+            <p>
+              <u>This line of text will render as underlined</u>
+            </p>
+            <p>
+              <small
+                >This line of text is meant to be treated as fine print.</small
+              >
+            </p>
+            <p>
+              <strong>This line rendered as bold text.</strong>
+            </p>
+            <p>
+              <em>This line rendered as italicized text.</em>
+            </p>
+          </div>
+        </div>
+        <div class="card display-block">
+          <div class="card-title">
+            <h3>Colors</h3>
+          </div>
+          <div class="card-content">
+            <p class="text-center">
+              No Color
+              <br />
+              <span class="text-primary">Primary </span>
+              <br />
+              <span class="text-secondary">Secondary </span>
+              <br />
+              <span class="text-muted">Muted </span>
+              <br />
+              <span class="text-success">Success </span>
+              <br />
+              <span class="text-warning">Warning </span>
+              <br />
+              <span class="text-error">Error </span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
