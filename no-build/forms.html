@@ -1,6 +1,3 @@
----
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,36 +7,39 @@
     <title>A Framework for Learning CSS - Forms</title>
     <meta name="description" content="A Framework for Learning CSS" />
     <meta name="author" content="Caitlin Donahue" />
-    <link rel="stylesheet" href="samplecss/sample.css" id="styles" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="../samplecss/sample.css" id="styles" />
+    <script src="../main.js"></script>
   </head>
   <body>
     <div class="container">
       <h1 class="text-center" >A Framework for Learning CSS</h1>
       <h2 class="text-center" >Forms</h2>
-      <br />
-      <div class="nav-links">
-        <a href="{{ site.baseurl }}/">Home</a>
-        <a href="{{ site.baseurl }}/forms.html">Forms</a>
-        <a href="{{ site.baseurl }}/typography.html">Typography</a>
-      </div>
       <br>
-      <div class="theme-buttons">
-        <button class="primary" onclick="changeTheme('css/framework.css')">No Theme</button>
-        <button class="primary" onclick="changeTheme('samplecss/sample.css')">
-          Sample Theme
-        </button>
-      </div>
+      <div>
+        <div class="nav-links">
+          <a href="/no-build/">Home</a>
+          <a href="/no-build/forms.html">Forms</a>
+          <a href="/no-build/typography.html">Typography</a>
+        </div>
+        <br />
+        <div class="theme-buttons">
+          <button class="primary" onclick="changeTheme('../css/framework.css')">
+            No Theme
+          </button>
+          <button class="primary" onclick="changeTheme('../samplecss/sample.css')">
+            Sample Theme
+          </button>
+        </div>
       <div>
         <h3>Basic Form Control</h3>
         <form>
           <fieldset>
             <legend>Basic Text Form Styling</legend>
-            <div class="form-control">
+            <p>
               <label for="default">Default</label>
               <input type="text" id="default" name="default" placeholder="Example input" />
-            </div>
-            <div class="form-control">
+            </p>
+            <p>
               <label for="disabled">Disabled</label>
               <input
                 type="text"
@@ -49,8 +49,8 @@
                 placeholder="Example input"
                 disabled
               />
-            </div>
-            <div class="form-control">
+            </p>
+            <p>
               <label for="readonly">Read Only</label>
               <input
                 type="text"
@@ -59,27 +59,26 @@
                 value="read only text"
                 readonly
               />
-            </div>
-              <div class="form-control">
-                <label for="required">Required</label>
-                <input
-                  type="text"
-                  id="required"
-                  name="required"
-                  placeholder="Example input"
-                  required
-                />
-                <div class="error-text hide-valid">Helper text for the associated form</div>
-              </div>
-            <div class="form-control">
+            </p>
+            <p>
+              <label for="required">Required</label>
+              <input
+                type="text"
+                id="required"
+                name="required"
+                placeholder="Example input"
+                required
+              />
+            </p>
+            <p>
               <label for="errored">Invalid</label>
               <input type="text" id="errored" placeholder="Example input" pattern="abc" name="errored" value="false"/>
-            </div>
-              <div class="form-control">
-                <label for="help">Help Text</label>
-                <input type="text" id="help" name="help" placeholder="Example input" aria-describedby="help-text"/>
-                <div class="help-text">Helper text for the associated form</div>
-              </div>
+            </p>
+            <p>
+              <label for="help">Help Text</label>
+              <input type="text" id="help" name="help" placeholder="Example input" aria-describedby="help-text"/>
+              <div id="help-text">Helper text for the associated form</div>
+            </p>
             
             
           </fieldset>

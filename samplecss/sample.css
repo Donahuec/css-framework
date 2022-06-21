@@ -2320,8 +2320,8 @@ a:visited {
 input[type="text"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2344,8 +2344,8 @@ input[type="text"]::placeholder {
 input[type="email"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2368,8 +2368,8 @@ input[type="email"]::placeholder {
 input[type="tel"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2392,8 +2392,8 @@ input[type="tel"]::placeholder {
 input[type="url"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2416,8 +2416,8 @@ input[type="url"]::placeholder {
 input[type="number"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2440,8 +2440,8 @@ input[type="number"]::placeholder {
 input[type="search"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2464,8 +2464,8 @@ input[type="search"]::placeholder {
 input[type="password"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2488,8 +2488,8 @@ input[type="password"]::placeholder {
 input[type="date"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2512,8 +2512,8 @@ input[type="date"]::placeholder {
 input[type="time"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2536,8 +2536,8 @@ input[type="time"]::placeholder {
 input[type="datetime-local"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2560,8 +2560,8 @@ input[type="datetime-local"]::placeholder {
 input[type="week"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2584,8 +2584,8 @@ input[type="week"]::placeholder {
 input[type="month"] {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2608,8 +2608,8 @@ input[type="month"]::placeholder {
 select {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -2632,8 +2632,8 @@ select::placeholder {
 textarea {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  margin: 0 0 1em 0;
-  padding: 10px;
+  margin: .25em 0 .25em 0;
+  padding: 5px;
   color: #111111;
 }
 
@@ -3715,6 +3715,41 @@ textarea:invalid::placeholder {
 
 textarea:invalid:focus-visible {
   outline: 2px solid #690600;
+}
+
+.form-control {
+  margin: .5em 0 1em 0;
+}
+
+.form-control label {
+  display: inline-block;
+}
+
+.form-control input {
+  display: block;
+}
+
+.form-control .help-text,
+.form-control .error-text,
+.form-control .success-text {
+  display: block;
+  font-size: .75rem;
+}
+
+.form-control input:valid ~ .hide-valid.help-text, .form-control input:valid ~ .hide-valid.error-text, .form-control input:valid ~ .hide-valid.success-text {
+  display: none;
+}
+
+.form-control .help-text {
+  color: #444444;
+}
+
+.form-control .error-text {
+  color: #ff4136;
+}
+
+.form-control .success-text {
+  color: #2ecc40;
 }
 
 .nav-links {

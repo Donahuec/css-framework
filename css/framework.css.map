@@ -9,7 +9,8 @@
         "components/_buttons.scss",
         "layout/_general.scss",
         "styles/_typography.scss",
-        "styles/_colors.scss"
+        "styles/_colors.scss",
+        "styles/_formControls.scss"
     ],
     "names": [],
     "file": "framework.css"
