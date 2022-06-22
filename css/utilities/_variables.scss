@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 // colors from https://clrs.cc/
 $navy: #001f3f;
 $blue: #0074d9;
@@ -18,13 +20,47 @@ $gray: #aaaaaa;
 $silver: #dddddd;
 $white: #ffffff;
 // Theme
-$primary-color: $blue;
-$secondary-color: $teal;
+$primary-color: darken($teal, 20%);
+$secondary-color: darken($pink, 10%);
 $default-color: $gray;
 $success-color: $green;
 $warning-color: $orange;
 $error-color: $red;
+
+$primary-color-light: lighten($primary-color, 30%);
+$primary-color-dark: darken($primary-color, 20%);
+
+$secondary-color-light: lighten($secondary-color, 30%);
+$secondary-color-dark: darken($secondary-color, 10%);
+
+$default-color-light: lighten($default-color, 20%);
+$default-color-dark: darken($default-color, 40%);
+
+$success-color-light: lighten($success-color, 30%);
+$success-color-dark: darken($success-color, 40%);
+
+$warning-color-light: lighten($warning-color, 30%);
+$warning-color-dark: darken($warning-color, 40%);
+
+$error-color-light: lighten($error-color, 30%);
+$error-color-dark: darken($error-color, 40%);
+
+// Theme Font Colors
+$text-dark: $black;
+$text-light: $silver;
+
 // Fonts
-$font-roboto: "Roboto", sans-serif;
+$font-sans-serif: "Roboto", sans-serif;
+$font-serif: "IBM Plex Serif", serif;
+$font-mono: "Roboto Mono", sans-serif;
+
+// Font Weight
+$font-thin: 100;
+$font-extra-light: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
 //misc
-$default-radius: 2px;
+$default-radius: 3px;
